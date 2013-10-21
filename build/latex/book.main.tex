@@ -1,0 +1,49 @@
+\documentclass[11pt,twoside,final]{memoir}
+
+\newcommand{\bookTitle}{Now is the Knowing}
+\newcommand{\bookAuthor}{Ajahn Sumedho}
+\newcommand{\bookISBN}{978-0-9568113-5-6}
+
+\newcommand{\editioninfo}{%
+{\raggedright\par
+\textit{Third edition}, 10,000 copies, printed in Malaysia -- 2011
+\par
+}}
+
+\title{\bookTitle}
+\author{\bookAuthor}
+
+\usepackage{mylayout}
+
+\begin{document}
+
+\thispagestyle{empty}
+\mbox{}\newpage\thispagestyle{empty}
+\mbox{}
+\AddToShipoutPicture*{\put(\LenToUnit{0.85in},\LenToUnit{5.5in}){\includegraphics[width=30mm,keepaspectratio]{spearshape_by_Scott_edited_CMYK.png}}}
+\newpage
+
+\input{./src-tex/frontmatter_opening-pages.tex}
+
+\chapter{Buddha, Dhamma, Sa\.ngha}
+\enlargethispage{-\baselineskip}
+\input{./src-tex/buddha-dhamma-sangha.tex}
+
+\chapter{\=An\=ap\=anasati}
+\input{./src-tex/anapanasati.tex}
+
+\chapter{Happiness, Unhappiness and Nibb\=ana}
+\input{./src-tex/happiness.tex}
+
+\cleardoublepage
+\thispagestyle{empty}
+\input{./src-tex/for-free-distribution.tex}
+
+\clearpage
+\thispagestyle{customplain}
+\input{./src-tex/cc-details.tex}
+
+\newpage\mbox{}\thispagestyle{empty}
+\newpage\mbox{}\thispagestyle{empty}
+
+\end{document}
